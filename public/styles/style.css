@@ -1,0 +1,150 @@
+*,
+*::after,
+*::before {
+    box-sizing: content-box;
+}
+
+html {
+    box-sizing: inherit;
+    background-color: white;
+}
+
+body {
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90vw;
+    height: 85vh;
+    padding: 1rem;
+    padding-bottom: 0px;
+    background: linear-gradient(0deg, #ffffff 0%, #61b1fb 100%);
+    border: 6px solid #d87093;
+    border-radius: 8px;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    color: palevioletred;
+}
+
+.quien-soy {
+    font-size: 20px;
+}
+
+.container-botones {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boton {
+    position: relative;
+    z-index: 10;
+    width: 30vw;
+    margin-bottom: 2rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-align: center;
+    background: palevioletred;
+    color: palegreen;
+    box-shadow: 10px 10px 17px -11px rgba(0, 0, 0, 0.75);
+    transition-property: background;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+.boton-pulsado {
+    background: rgb(105, 192, 218);
+    color: palevioletred;
+    box-shadow: inset 10px 10px 17px -11px rgba(0, 0, 0, 0.75);
+}
+
+.bloqueo {
+    background-color: grey;
+}
+
+.resultado {
+    position: relative;
+    display: none;
+    width: 70%;
+    height: 15%;
+    margin: 0 auto;
+    background-color: palevioletred;
+    border: 3px solid black;
+    border-radius: 5px;
+    z-index: 10;
+    font-size: 3rem;
+}
+
+.resultado span {
+    animation-name: aparecer;
+    animation-duration: 1s;
+    color: palegreen;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.resultado-isActive {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: movimiento;
+    animation-timing-function: cubic-bezier(1, 0.14, 0.25, 1.73);
+    animation-duration: 2s;
+}
+
+@keyframes movimiento {
+    from {
+        left: -350px;
+    }
+    to {
+        left: 0px;
+    }
+}
+
+.container-boton-sorteo {
+    display: none;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.boton-70 {
+    width: 70%;
+}
+
+.boton-isActive {
+    display: flex;
+    justify-content: center;
+}
+
+.arbol {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+}
+
+.arbol img {
+    width: 350px;
+    opacity: 0.2;
+}
