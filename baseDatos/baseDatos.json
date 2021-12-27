@@ -1,1 +1,1 @@
-[{"participante":"Santos","suerte":"Padre","sorteado":false},{"participante":"Madre","suerte":"Maria","sorteado":false},{"participante":"Maria","suerte":"Santos","sorteado":false},{"participante":"Padre","suerte":"Madre","sorteado":false}]
+[{"participante":"Madre","suerte":"Maria","sorteado":true},{"participante":"Padre","suerte":"Santos","sorteado":false},{"participante":"Santos","suerte":"Madre","sorteado":false},{"participante":"Maria","suerte":"Padre","sorteado":true}]
